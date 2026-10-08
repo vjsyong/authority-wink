@@ -1,6 +1,6 @@
 # Agent brief: build under the Wink Interface System authority
 
-Authority: `packs/wink` v0.2.0 (format 0.1). A friendly, clearly-designed interface system derived from the Mailchimp brand and live product for the Design Authority synthesis experiment. Warm, pill-shaped, playful; no Mailchimp marks reproduced.
+Authority repo: `authority-wink` (v0.2.0, format 0.1). A friendly, clearly-designed interface system derived from the Mailchimp brand and live product for the Design Authority synthesis experiment. Warm, pill-shaped, playful; no Mailchimp marks reproduced.
 
 Reference build (what "look like this" means for this authority):
   https://designauthority.seanyong.xyz/authorities/wink/site/
@@ -22,7 +22,7 @@ Build an interface that conforms to THIS authority alone.
    python3 tools/da.py --pack packs/wink resolve "primary button" --json
 3. Inspect every record before adopting it:
    python3 tools/da.py --pack packs/wink inspect <id>
-4. Adopt only records from packs/wink. Never borrow another authority's
+4. Adopt only records shipped by this authority. Never borrow another's
    components, values or classes.
 5. When the authority is silent: build from the nearest recorded pieces, keep
    the improvisation visible (an HTML comment plus data-improv="<reason>"),
