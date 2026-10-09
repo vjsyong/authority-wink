@@ -1,5 +1,5 @@
 {
- "contract_version": "0.1",
+ "contract_version": "0.2",
  "authority": "wink",
  "pack_version": "wink 0.2.0",
  "scope_note": "Verification contract for the wink authority (verification experiment, 2026-10-08). Each check names the authority item it verifies, its verifiability classification, a verification mode, and minimal deterministic assertions. REVIEW entries are surfaced as REVIEW_REQUIRED and are never faked into PASS. Instrument styling (body.marks-on, .mark-toggle, #provPanel, .prov-*) is review tooling, not app UI, and is excluded from palette scans.",
@@ -297,10 +297,10 @@
    "assertions": [
     {
      "relation": "present",
-     "pattern": "::backdrop[^}]*rgba\\(35,\\s*30,\\s*21,\\s*(?:\\.35|0\\.35)\\)"
+     "pattern": "(?:::backdrop[^}]*|--(?:scrim|overlay)\\s*:\\s*)rgba\\(35,\\s*30,\\s*21,\\s*(?:\\.35|0\\.35)\\)"
     }
    ],
-   "note": "accepts .35 and 0.35 alpha spellings (same colour — formatting is not the claim)"
+   "note": "accepts ::backdrop rules or a declared --scrim/--overlay token (any alpha spelling of .35 — formatting is not the claim)"
   },
   {
    "id": "wink/dialog-no-motion",
@@ -368,14 +368,14 @@
    "assertions": [
     {
      "relation": "present",
-     "pattern": "\\.field-error[^}]*var\\(--err\\)"
+     "pattern": "\\.field-error[^}]*(?:var\\(--err(?:or)?\\)|#BF4055)"
     },
     {
      "relation": "present",
-     "pattern": "\\.invalid[^}]*var\\(--err\\)"
+     "pattern": "(?:\\.invalid|\\[aria-invalid)[^}]*(?:var\\(--err(?:or)?\\)|#BF4055)"
     }
    ],
-   "note": "Verified at the rule level (both declarations present); behavioural check of the invalid state is deferred — the field flows are interactive."
+   "note": "Verified at the rule level (both declarations present); accepts --err/--error spellings and .invalid/[aria-invalid] hooks — spelling is not the claim. Behavioural check of the invalid state is deferred."
   },
   {
    "id": "wink/progress-ring",
@@ -682,6 +682,41 @@
     }
    ],
    "note": "interaction pass: double-toggle one tick (covers both log/unlog initial states — the app only toasts on the log path) and rescan for floating surfaces afterwards"
+  },
+  {
+   "id": "wink/brand-link-ink",
+   "item": "component/navbar",
+   "title": "Brand/nav links render in ink, never the UA default link colour",
+   "classification": "MECHANICALLY_VERIFIABLE",
+   "severity": "error",
+   "mode": "COMPUTED_STYLE",
+   "selector": ".brand",
+   "assertions": [
+    {
+     "property": "color",
+     "relation": "color_is",
+     "value": "#231E15"
+    }
+   ],
+   "missing": "fail",
+   "note": "The navbar record's \"dark links\" (a{color:var(--ink)}). A missing rule leaves the UA default blue/purple — the calendar build's \"Wink Calendar\" brand was exactly this."
+  },
+  {
+   "id": "wink/no-double-stroke",
+   "item": "guideline/shape-language",
+   "title": "Ringed pills carry a single stroke (no visible border under an ink ring)",
+   "classification": "MECHANICALLY_VERIFIABLE",
+   "severity": "error",
+   "mode": "INTERACTION",
+   "scenario": "border-ring-scan",
+   "assertions": [
+    {
+     "evidence": "double_stroke",
+     "relation": "count_eq",
+     "value": 0
+    }
+   ],
+   "note": "Element-agnostic scan: any element with an outer ring (box-shadow 0 0 0 Npx, non-inset) must not also render a visible border — the calendar chip's \"faux reflection\" double-stroke (UA border under the ring)."
   }
  ]
 }
