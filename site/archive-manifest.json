@@ -4,7 +4,7 @@
   "pack": "authorities/wink",
   "version": "0.2.0"
  },
- "generated_at": "2026-10-09T13:55:42+00:00",
+ "generated_at": "2026-10-09T14:44:54+00:00",
  "checks": {
   "external_references": 1,
   "css_extracted": true,
@@ -26,7 +26,7 @@
  "files": [
   {
    "path": ".site-state.json",
-   "sha256": "24d672f599b2da9f893dda79ae2d3c630806c35b9d7ceb8c39fa8c9b070279c6",
+   "sha256": "bef4fdf1fdcd5de908907913356ee372d83b228ca90d1154120c5010503a7a1e",
    "size": 1090,
    "role": "refresh state (pack hash, version, artifact set)"
   },
@@ -50,8 +50,8 @@
   },
   {
    "path": "index.html",
-   "sha256": "392508eb9002dc98eddf7df7cdf2bee806cf7da61f66339709fd4f8ca3cee305",
-   "size": 36867,
+   "sha256": "441b3fe1823ed8fd31c1aced5d66b4e40254f3b4be246ae51310ef19cc0008f3",
+   "size": 36868,
    "role": "page"
   },
   {
@@ -62,8 +62,8 @@
   },
   {
    "path": "refresh-log.md",
-   "sha256": "eea9bb9d2916b335d57a244825caf5cf020c37b645d8e9922f88fb3b0b9eab28",
-   "size": 3237,
+   "sha256": "b9029841aa0cfb0686b7b17021f3af2c0a9bde837a591202daf8cd4349ab7c6d",
+   "size": 3423,
    "role": "refresh log (generated layers vs pack)"
   },
   {
