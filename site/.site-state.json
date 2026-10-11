@@ -1,5 +1,5 @@
 {
- "pack_hash": "0cd321acb43c501598e4c355630bdbb3ca47b221257f48ba4cda4cd9db523010",
+ "pack_hash": "f0ecbea5ef3ec06f81b8a203269832badf21f03443dae87aafecc8a842473b49",
  "version": "0.2.0",
  "ids": [
   "component/action-pill",
@@ -42,5 +42,5 @@
    "token-set/type-scale"
   ]
  },
- "refreshed_at": "2026-10-09T14:44:54+00:00"
+ "refreshed_at": "2026-10-11T09:26:05+00:00"
 }
