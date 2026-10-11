@@ -1,2 +1,7 @@
 site/download/*.zip
 __pycache__/
+
+# compiler publish scaffolding (transient; cleared on success)
+.da-publish-journal.json
+.da-publish-backup/
+.da-compile-staging-*/
