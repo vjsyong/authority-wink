@@ -81,6 +81,12 @@
       "note": "Destructive flow resolves to the pattern."
     },
     {
+      "problem": "delete a ritual permanently",
+      "expect": "RESOLVED",
+      "expect_id": "pattern/destructive-confirm",
+      "note": "Proposal check: must not be UNDEFINED once shipped."
+    },
+    {
       "problem": "an inline notice confirming the save",
       "expect": "RESOLVED",
       "expect_id": "pattern/inline-notice",
@@ -103,12 +109,6 @@
       "expect": "UNDEFINED",
       "expect_id": null,
       "note": "Indeterminate spinner stays uncovered."
-    },
-    {
-      "problem": "delete a ritual permanently",
-      "expect": "RESOLVED",
-      "expect_id": "pattern/destructive-confirm",
-      "note": "Proposal check: must not be UNDEFINED once shipped."
     }
   ]
 }
