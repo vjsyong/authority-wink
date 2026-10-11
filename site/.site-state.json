@@ -1,6 +1,6 @@
 {
- "pack_hash": "eca053187dd7c9b1a4f2481a563572ea7e3eb4e8393daaa64981f081d1207535",
- "version": "0.3.0-rc1",
+ "pack_hash": "cba7ee0c7f1ececaf43e21182d57f77160f220e9c2803ce6a2c13b4a4d876fd2",
+ "version": "0.3.0",
  "ids": [
   "component/action-pill",
   "component/badge",
@@ -42,5 +42,5 @@
    "token-set/type-scale"
   ]
  },
- "refreshed_at": "2026-10-11T09:53:11+00:00"
+ "refreshed_at": "2026-10-11T11:16:43+00:00"
 }

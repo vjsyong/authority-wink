@@ -1,16 +1,16 @@
 # Archive manifest - wink
 
-Authority: `authorities/wink` @ 0.3.0-rc1 - generated 2026-10-11T09:53:11+00:00 UTC
+Authority: `authorities/wink` @ 0.3.0 - generated 2026-10-11T11:16:43+00:00 UTC
 
 | file | role | sha256 (first 16) | size |
 |---|---|---|---|
-| `.site-state.json` | refresh state (pack hash, version, artifact set) | `598509fab9c8618c` | 1094 |
-| `agent-brief.md` | asset | `a76326d82182b245` | 4466 |
+| `.site-state.json` | refresh state (pack hash, version, artifact set) | `76f5651c1e5b1205` | 1090 |
+| `agent-brief.md` | asset | `2ebf1d3056061ecd` | 4462 |
 | `audit.jsonl` | machine-recorded authority call trace | `9a914fce9b352d3a` | 86360 |
 | `brief.md` | build brief | `3d10e0db45c1e1b3` | 2272 |
-| `index.html` | page | `195300c2a9af6b46` | 36887 |
+| `index.html` | page | `201095d25f66aeef` | 36872 |
 | `log.md` | build log (agent, 1:1 with audit.jsonl) | `c98f0a0abc03940d` | 25626 |
-| `refresh-log.md` | refresh log (generated layers vs pack) | `fb3c10984ccddbfe` | 3985 |
+| `refresh-log.md` | refresh log (generated layers vs pack) | `52b41f2b8d5f23d0` | 4175 |
 | `run-authority` | audited runner (build-time tool) | `e8aa85be1b6de165` | 1027 |
 | `styles.css` | stylesheet | `f08606570fa46148` | 12418 |
 | `fonts/Fraunces-Italic-VF.ttf` | brand font file | `b24448c43702fac4` | 414904 |
