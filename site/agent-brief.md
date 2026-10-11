@@ -1,6 +1,6 @@
 # Agent brief: build under the Wink Interface System authority
 
-Authority repo: `authority-wink` (v0.2.0, format 0.1). A friendly, clearly-designed interface system derived from the Mailchimp brand and live product for the Design Authority synthesis experiment. Warm, pill-shaped, playful; no Mailchimp marks reproduced.
+Authority repo: `authority-wink` (v0.3.0-rc1, format 0.1). A friendly, clearly-designed interface system derived from the Mailchimp brand and live product for the Design Authority synthesis experiment. Warm, pill-shaped, playful; no Mailchimp marks reproduced.
 
 Reference build (what "look like this" means for this authority):
   https://designauthority.seanyong.xyz/authorities/wink/site/
